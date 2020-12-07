@@ -4,24 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login_page">
+    tools:context=".Login_page"
+
+    android:background="@mipmap/listview">
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
+        android:layout_width="141dp"
+        android:layout_height="84dp"
+        android:background="@mipmap/in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047"
-        tools:textSize="36sp" />
+        app:layout_constraintVertical_bias="0.047" />
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textviewx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Username :"
@@ -35,7 +36,7 @@
         app:layout_constraintVertical_bias="0.237" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/userLog"
         android:layout_width="246dp"
         android:layout_height="47dp"
         android:ems="10"
@@ -63,7 +64,7 @@
         app:layout_constraintVertical_bias="0.352" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/passLog"
         android:layout_width="246dp"
         android:layout_height="46dp"
         android:ems="10"
@@ -78,7 +79,7 @@
         app:layout_constraintVertical_bias="0.347" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Logbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
@@ -103,7 +104,7 @@
         app:layout_constraintVertical_bias="0.807" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/signPrompt"
         android:layout_width="74dp"
         android:layout_height="29dp"
         android:text="SignUp"
@@ -113,4 +114,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.807" />
+
+    <CheckBox
+        android:id="@+id/rememberme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 </androidx.constraintlayout.widget.ConstraintLayout>
